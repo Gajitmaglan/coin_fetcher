@@ -1,0 +1,111 @@
+.mainpage-container {
+  width: 100%;
+  background-color: black;
+  position: relative;
+}
+
+.text-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  /* transform: translate(-50%, -50%); */
+  color: white;
+  text-align: center;
+  padding: 0;
+  margin: 0;
+  z-index: 1;
+  width: 100%;
+  height: inherit;
+  bottom: 0px;
+}
+
+img {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+  position: relative;
+  top: 0;
+  left: 0;
+  pointer-events: none;
+  user-select: none;
+  z-index: 0;
+}
+
+.search-suggestions {
+  position: relative;
+  padding-bottom: 0.5rem;
+  width: 40%;
+  margin: auto;
+  background-color: rgba(0, 0, 0, 0.7);
+}
+
+.list-item a {
+  color: white;
+  text-decoration: none;
+  font-size: 1.5rem;
+  padding: 0 0.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.list-item:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+.list-item-img {
+  height: 2rem;
+  width: 2rem;
+}
+
+.filler-text {
+  height: 30vh;
+}
+
+.trending {
+  padding: 1rem;
+  transform: scale(1);
+  width: 45%;
+  margin: auto;
+  margin-top: 25%;
+  background-color: rgba(0, 0, 0, 0.7);
+}
+
+@media screen and (min-width: 800px) {
+  img#one {
+    width: 100%;
+    height: auto;
+    /* Add any specific styles for larger screens here */
+  }
+  img#two {
+    width: 100%;
+    height: auto;
+    /* Add any specific styles for larger screens here */
+  }
+}
+
+@media screen and (max-width: 800px) {
+  * {
+    font-size: 1rem;
+  }
+  img#one {
+    width: 130%;
+    height: auto;
+    margin-left: 50%;
+    transform: translateX(-50%);
+    /* Add any specific styles for smaller screens here */
+  }
+  img#two {
+    width: 120%;
+    height: auto;
+    margin-left: 50%;
+    transform: translateX(-55%);
+    /* Add any specific styles for smaller screens here */
+  }
+  .search-suggestions {
+    width: 80%;
+  }
+  .trending {
+    width: 90%;
+    margin-top: 10%;
+    margin-bottom: auto;
+  }
+}

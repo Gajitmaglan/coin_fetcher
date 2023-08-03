@@ -1,0 +1,22 @@
+.search-bar {
+  padding: 0 0.5rem;
+  color: white;
+  font-size: 1.5rem;
+  border: 3px solid black;
+  height: inherit;
+  margin: auto;
+  margin-top: 8%;
+  width: 40%;
+  height: 2.5rem;
+  background-color: rgba(0, 0, 0, 0.7);
+}
+.search-bar:focus {
+  border: 3px solid black;
+  outline: none;
+}
+
+@media screen and (max-width: 800px) {
+  .search-bar {
+    width: 80%;
+  }
+}
